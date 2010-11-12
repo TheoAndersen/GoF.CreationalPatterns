@@ -1,0 +1,3 @@
+The is a simple test-project i've made for trying out the creational patterns and the Maze-example described in Chapter 3 of the Gang of Four - Design patterns book.
+
+The unit-tests should perhaps be extended to really use the Maze classes, which would more accurately prove that the different creational patterns are working.
