@@ -43,6 +43,7 @@
     <Compile Include="DoorNeedingSpell.cs" />
     <Compile Include="AbstractFactory\AbstractFactoryMazeGame.cs" />
     <Compile Include="FactoryMethod\EnchantedFactoryMethodMazeGame.cs" />
+    <Compile Include="Prototype\MazePrototypeFactory.cs" />
     <Compile Include="Spell.cs" />
     <Compile Include="Builder\CountingMazeBuilder.cs" />
     <Compile Include="Builder\MazeBuilder.cs" />

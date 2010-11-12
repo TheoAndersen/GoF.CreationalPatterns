@@ -11,5 +11,14 @@ namespace GoF.CreationalPatterns
         {
 
         }
+
+        #region Needed For Prototype pattern
+
+        public Wall Clone()
+        {
+            return (Wall)this.MemberwiseClone();
+        }
+
+        #endregion
     }
 }

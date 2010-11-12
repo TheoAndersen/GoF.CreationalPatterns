@@ -23,5 +23,15 @@ namespace GoF.CreationalPatterns
         {
             return rooms.Find(r => r.roomNo == number);
         }
+
+        /// <summary>
+        /// Clone's the Maze (neede for the prototype pattern)
+        /// </summary>
+        /// <returns></returns>
+        public Maze Clone()
+        {
+            return (Maze)this.MemberwiseClone();
+        }
+       
     }
 }

@@ -13,6 +13,10 @@ namespace GoF.CreationalPatterns
         MapSite westSide;
         MapSite eastSide;
 
+        public Room()
+        {
+
+        }
 
         public Room(int roomNo)
         {
@@ -59,6 +63,18 @@ namespace GoF.CreationalPatterns
         public override void Enter()
         {
             throw new NotImplementedException();
+        }
+        
+        /// <summary>
+        /// Needed for the prototype pattern
+        /// </summary>
+        /// <param name="roomNumber"></param>
+        /// <returns></returns>
+        public Room Clone(int roomNumber)
+        {
+            Room room = (Room)this.MemberwiseClone();
+            room.roomNo = roomNumber;
+            return room;
         }
     }
 }

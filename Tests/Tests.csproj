@@ -50,6 +50,7 @@
     <Compile Include="FactoryMethodTest.cs" />
     <Compile Include="InitialMazeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PrototypeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GoF.CreationalPatterns\GoF.CreationalPatterns.csproj">

@@ -11,6 +11,13 @@ namespace GoF.CreationalPatterns
         Room room2;
         bool isOpen;
 
+
+        public Door()
+        {
+
+
+        }
+
         public Door(Room room1, Room room2)
         {
             this.room1 = room1;
@@ -30,5 +37,22 @@ namespace GoF.CreationalPatterns
         public override void Enter()
         {
         }
+
+        #region Needed For Prototype pattern
+
+        internal void Initialize(Room r1, Room r2)
+        {
+            this.room1 = r1;
+            this.room2 = r2;
+        }
+
+        public Door Clone(Room r1, Room r2)
+        {
+            Door door = (Door)this.MemberwiseClone();
+            door.Initialize(r1, r2);
+            return door;
+        }
+
+        #endregion     
     }
 }
